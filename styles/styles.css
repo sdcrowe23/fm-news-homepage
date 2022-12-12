@@ -71,7 +71,7 @@ a {
 }
 
 .mb-nav {
-  display: flex;
+  display: none;
   position: absolute;
   width: 100%;
   top: 0;
