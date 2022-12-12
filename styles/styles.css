@@ -27,7 +27,7 @@
   --dark-spaceblue: hsl(240, 100%, 5%);
 }
 
-/* Base */
+/* Base Style */
 
 ul {
   list-style-type: none;
@@ -59,6 +59,8 @@ a {
   width: 64px;
 }
 
+/* Desktop Navigation */
+
 .dt-navigation {
   display: flex;
 }
@@ -76,21 +78,46 @@ a {
   margin-right: 0;
 }
 
+/* Mobile Navigation */
+
+@keyframes nav-in {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
 .mb-nav {
   display: none;
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
   z-index: 10;
+  animation-name: nav-in;
+  animation-duration: 1s;
+}
+
+@keyframes overlay-in {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: calc(100% - 68.27%);
+  }
 }
 
 .overlay {
   width: calc(100% - 68.27%);
   background-color: #333333;
   opacity: 0.35;
+  animation-name: overlay-in;
+  animation-duration: 1s;
 }
 
 .navigation-container {
@@ -100,13 +127,18 @@ a {
   background-color: #fff;
 }
 
-.navigation-container span {
+.navigation-container img {
   align-self: flex-end;
 }
 
-.close-icon {
+.nav-icon {
+  display: flex;
+  justify-content: center;
+}
+
+#nav-icon-close {
   width: 30px;
-  margin: 28px 20px 0 0;
+  margin: 40px 20px 0 0;
 }
 
 .mb-navigation {
@@ -121,13 +153,8 @@ a {
   margin-bottom: 0;
 }
 
-.hamburger-icon {
-  display: flex;
-  justify-content: center;
-}
-
 @media screen and (min-width: 600px) {
-  .hamburger-icon {
+  .nav-icon {
     display: none;
     width: 40px;
   }
