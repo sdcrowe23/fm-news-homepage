@@ -40,6 +40,7 @@ a {
 .wrapper {
   max-width: 1100px;
   margin: 0 auto;
+  border: 1px dashed;
 }
 
 /* Navigation */
@@ -64,6 +65,11 @@ a {
 
 .dt-link > a {
   margin-right: 40px;
+}
+
+.dt-link > a:hover,
+.mb-link a:hover {
+  color: var(--soft-red);
 }
 
 .dt-link:last-child a {
