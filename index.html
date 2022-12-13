@@ -1,113 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor Challenge | News Homepage</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon-32x32.png" />
+    <!-- Author Stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Frontend Mentor Challenge | News Homepage</title>
-  <link rel="icon" type="image/x-icon" href="/imgs/favicon-32x32.png" />
-  <!-- Author Stylesheet -->
-  <link rel="stylesheet" href="./styles/styles.css" />
-</head>
-
-<body>
-  <div class="wrapper">
-    <!-- Navigation -->
-    <nav class="navbar">
-      <a href="#" class="logo"><img src="./imgs/logo.svg" width="64px" alt="logo" /></a>
-      <!-- Mobile Navigation -->
-      <div class="mb-nav">
-        <div class="overlay"></div>
-        <div class="navigation-container">
+  <body>
+    <div class="wrapper">
+      <header>
+        <!-- Navigation -->
+        <nav class="navbar">
+          <a href="#" class="logo"
+            ><img src="./imgs/logo.svg" width="64px" alt="logo"
+          /></a>
+          <!-- Mobile Navigation -->
+          <div class="mb-nav">
+            <div class="overlay"></div>
+            <div class="navigation-container">
+              <!-- Mobile Navigation Icon -->
+              <img
+                src="/imgs/icon-menu-close.svg"
+                id="nav-icon-close"
+                class="nav-icon"
+                alt="Navigation menu"
+              />
+              <ul class="mb-navigation">
+                <li class="mb-link"><a href="#">Home</a></li>
+                <li class="mb-link"><a href="#">New</a></li>
+                <li class="mb-link"><a href="#">Popular</a></li>
+                <li class="mb-link"><a href="#">Trending</a></li>
+              </ul>
+            </div>
+            <!-- Mobile Navigation End -->
+          </div>
+          <!-- Desktop Navigation -->
           <!-- Mobile Navigation Icon -->
-          <img src="/imgs/icon-menu-close.svg" id="nav-icon-close" class="nav-icon" alt="Navigation menu" />
-          <ul class="mb-navigation">
-            <li class="mb-link"><a href="#">Home</a></li>
-            <li class="mb-link"><a href="#">New</a></li>
-            <li class="mb-link"><a href="#">Popular</a></li>
-            <li class="mb-link"><a href="#">Trending</a></li>
+          <img
+            src="/imgs/icon-menu.svg"
+            id="nav-icon-hamburger"
+            class="nav-icon"
+            alt="Navigation menu"
+          />
+          <ul class="dt-navigation">
+            <li class="dt-link"><a href="#">Home</a></li>
+            <li class="dt-link"><a href="#">New</a></li>
+            <li class="dt-link"><a href="#">Popular</a></li>
+            <li class="dt-link"><a href="#">Trending</a></li>
           </ul>
-        </div>
-        <!-- Mobile Navigation End -->
-      </div>
-      <!-- Desktop Navigation -->
-      <!-- Mobile Navigation Icon -->
-      <img src="/imgs/icon-menu.svg" id="nav-icon-hamburger" class="nav-icon" alt="Navigation menu" />
-      <ul class="dt-navigation">
-        <li class="dt-link"><a href="#">Home</a></li>
-        <li class="dt-link"><a href="#">New</a></li>
-        <li class="dt-link"><a href="#">Popular</a></li>
-        <li class="dt-link"><a href="#">Trending</a></li>
-      </ul>
-    </nav>
+        </nav>
+      </header>
 
-    <section class="top-articles">
-      <!--  Main article  -->
-      <article class="main-article">
-        <img src="/imgs/image-web-3-desktop.jpg" width="100%" ; alt="Blog Image" class="article-img">
-        <div class="article-copy">
-          <h1 class="article-title">The Bright Future of Web 3.0?</h1>
-          <div class="article-paragraph">
-            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
-              hands of the people. But is it really fulfilling its promise?</p>
-            <a href="#">Read More</a>
+      <section class="top-articles">
+        <!--  Main article  -->
+        <article class="main-article">
+          <img
+            src="/imgs/image-web-3-desktop.jpg"
+            width="100%"
+            ;
+            alt="Blog Image"
+            class="article-img"
+          />
+          <div class="article-copy">
+            <h1 class="article-title">The Bright Future of Web 3.0?</h1>
+            <div class="article-paragraph">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </article>
+        <!--  End Main article  -->
+        <!--  Newest Articles  -->
+        <aside class="new-articles">
+          <h2>New</h2>
+          <article class="feature">
+            <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+          <article class="feature">
+            <h3><a href="#">The Downsides of AI Artistry</a></h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </article>
+          <article class="feature">
+            <h3><a href="#">Is VC Funding Drying Up?</a></h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </article>
+        </aside>
+      </section>
+      <!--  End Latest Articles  -->
+      <aside class="popular-articles">
+        <div class="popular-feature">
+          <img src="/imgs/image-retro-pcs.jpg" alt="Image" />
+          <div class="popular-feature-copy">
+            <span>01</span>
+            <h3><a href="#">Reviving Retro PCs</a></h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
           </div>
         </div>
-      </article>
-      <!--  End Main article  -->
-      <!--  Newest Articles  -->
-      <aside class="new-articles">
-        <h2>New</h2>
-        <article class="feature">
-          <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </article>
-        <article class="feature">
-          <h3><a href="#">The Downsides of AI Artistry</a></h3>
-          <p>What are the possible adverse effects of on-demand AI image generation?</p>
-        </article>
-        <article class="feature">
-          <h3><a href="#">Is VC Funding Drying Up?</a></h3>
-          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-        </article>
+        <div class="popular-feature">
+          <img src="/imgs/image-top-laptops.jpg" alt="Image" />
+          <div class="popular-feature-copy">
+            <span>02</span>
+            <h3><a href="#">Top 10 Laptops of 2022</a></h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="popular-feature">
+          <img src="/imgs/image-gaming-growth.jpg" alt="Image" />
+          <div class="popular-feature-copy">
+            <span>03</span>
+            <h3><a href="#">The Growth of Gaming</a></h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
       </aside>
-    </section>
-    <!--  End Latest Articles  -->
-    <aside class="popular-articles">
-      <div class="popular-feature">
-        <img src="/imgs/image-retro-pcs.jpg" alt="Image">
-        <div class="popular-feature-copy">
-          <span>01</span>
-          <h3><a href="#">Reviving Retro PCs</a></h3>
-          <p>What happens when old PCs are given modern upgrades?</p>
-        </div>
-
-      </div>
-      <div class="popular-feature">
-        <img src="/imgs/image-top-laptops.jpg" alt="Image">
-        <div class="popular-feature-copy">
-          <span>02</span>
-          <h3><a href="#">Top 10 Laptops of 2022</a></h3>
-          <p>Our best picks for various needs and budgets.</p>
-        </div>
-      </div>
-      <div class="popular-feature">
-        <img src="/imgs/image-gaming-growth.jpg" alt="Image">
-        <div class="popular-feature-copy">
-          <span>03</span>
-          <h3><a href="#">The Growth of Gaming</a></h3>
-          <p>How the pandemic has sparked fresh opportunities.</p>
-        </div>
-
-      </div>
-    </aside>
-  </div>
-  </div>
-  <footer>
-    Challenge by Frontend Mentor. Coded by Your Name Here.
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+      <footer>Challenge by Frontend Mentor. Coded by Your Name Here.</footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
