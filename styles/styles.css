@@ -191,14 +191,15 @@ header {
   margin-bottom: 24px;
 }
 
+.mb-link a {
+  color: var(--dark-spaceblue);
+}
+
 .mb-navigation:last-child li.mb-link > a {
   margin-bottom: 0;
 }
 
 /* ========== MAIN ARTICLES STYLES ========== */
-
-main {
-}
 
 .main-articles {
   width: 100%;
