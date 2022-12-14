@@ -119,51 +119,33 @@ header {
 
 /* Mobile Navigation */
 
-@keyframes nav-in {
-  0% {
-    left: 120%;
-  }
-
-  100% {
-    left: 0;
-  }
-}
-
 .mb-nav {
-  display: none;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 10;
-  animation-name: nav-in;
-  animation-duration: 1s;
-}
-
-@keyframes overlay-in {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: calc(100% - 68.27%);
-  }
+  width: 0;
+  transition: 0.75s;
 }
 
 .overlay {
-  width: calc(100% - 68.27%);
   background-color: #000000;
   opacity: 0.55;
-  animation-name: overlay-in;
-  animation-duration: 1s;
+  width: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.75s;
 }
 
 .navigation-container {
   display: flex;
   flex-direction: column;
-  width: 68.27%;
+  position: fixed;
+  height: 100%;
+  width: 0;
+  top: 0;
+  right: 0;
   background-color: #fff;
+  z-index: 10;
+  transition: 0.75s;
 }
 
 .navigation-container img {
@@ -176,8 +158,10 @@ header {
 }
 
 #nav-icon-close {
+  display: none;
   width: 1.875rem;
   margin: 1.70625rem 1.25rem 0 0;
+  transition: 0.75s;
 }
 
 .mb-navigation {
