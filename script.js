@@ -1,6 +1,6 @@
 ((doc) => {
-    const navIconClose = doc.getElementById('nav-icon-close');
-    const navIconHamburger = doc.getElementById('nav-icon-hamburger');
+    const navIconClose = doc.querySelector('#nav-icon-close');
+    const navIconHamburger = doc.querySelector('#nav-icon-hamburger');
     const mbNavContainer = doc.querySelector('.navigation-container');
     const mbNavOverlay = doc.querySelector('.overlay');
 
