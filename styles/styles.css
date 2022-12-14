@@ -64,11 +64,6 @@ h3 {
   transition: all 0.3s;
 }
 
-h4 {
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-}
-
 p {
   font-size: 0.9375rem;
   line-height: 1.5rem;
@@ -202,7 +197,6 @@ header {
 /* ========== MAIN ARTICLES STYLES ========== */
 
 .main-articles {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -279,6 +273,7 @@ header {
 
 .latest-articles h3 a {
   color: var(--almost-white);
+  font-size: 1.25rem;
 }
 
 .latest-articles h3 a:hover {
@@ -293,7 +288,7 @@ header {
   border-bottom: 1px solid var(--almost-white);
 }
 
-.feature_title {
+.feature-title {
   color: var(--dark-spaceblue);
 }
 
