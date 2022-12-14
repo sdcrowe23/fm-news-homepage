@@ -106,6 +106,7 @@ ul {
 
 .dt-link > a {
   margin-right: 40px;
+  color: var(--dark-spaceblue);
 }
 
 .dt-link > a:hover,
@@ -267,6 +268,11 @@ ul {
   letter-spacing: 4.38px;
 }
 
+.main-feature_link:hover {
+  background-color: var(--dark-spaceblue);
+  color: var(--almost-white);
+}
+
 /* ========= LATEST ARTICLE MEDIA QUERIES ========= */
 
 .latest-articles {
@@ -301,6 +307,14 @@ ul {
   justify-content: center;
   flex: 1 0;
   border-bottom: 1px solid var(--almost-white);
+}
+
+.feature_title {
+  color: var(--dark-spaceblue);
+}
+
+.feature_title:hover {
+  color: var(--soft-red);
 }
 
 .feature:last-child {
@@ -340,6 +354,14 @@ ul {
 
 .popular-feature:last-child {
   margin-right: 0;
+}
+
+.popular-feature h3 a {
+  color: var(--dark-spaceblue);
+}
+
+.popular-feature h3 a:hover {
+  color: var(--soft-red);
 }
 
 /* ========= FOOTER ========= */
