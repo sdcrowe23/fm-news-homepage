@@ -83,19 +83,21 @@ ul {
 
 .wrapper {
   max-width: 71.375rem;
-  padding: 1em;
+  padding: 0 1em;
   margin: 0 auto;
+  padding-top: 5.5625rem;
+}
+
+header {
+  margin-bottom: 3.4375rem;
 }
 
 /* Navigation */
 
 .navbar {
-  margin-top: 89px;
-  margin-bottom: 55px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
 }
 
 /* Desktop Navigation */
@@ -193,38 +195,17 @@ ul {
   margin-bottom: 0;
 }
 
-/* Media Queries related to mobile navigation */
-
-@media screen and (min-width: 700px) {
-  .nav-icon {
-    display: none;
-    width: 40px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .dt-navigation {
-    display: none;
-  }
-
-  .logo img {
-    width: 44px;
-  }
-
-  .navbar {
-    margin-top: 40px;
-    margin-bottom: 32px;
-  }
-}
-
 /* ========== MAIN ARTICLES STYLES ========== */
+
+main {
+}
 
 .main-articles {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 4.4375em;
+  margin-bottom: 4.4376rem;
 }
 
 .main-feature {
@@ -325,15 +306,20 @@ ul {
 
 /* ========= POPULAR ARTICLES ========= */
 
-.popular-articles {
-  margin-bottom: 4em;
+.popular-articles_wrapper {
   display: flex;
+  justify-content: center;
+}
+
+.popular-articles {
+  display: flex;
+  gap: 1.875em;
 }
 
 .popular-feature {
   display: flex;
   flex: 1;
-  margin-right: 1.875em;
+  gap: 1.875em;
 }
 
 .popular-feature span {
@@ -345,7 +331,6 @@ ul {
 
 .popular-feature img {
   width: 6.25rem;
-  margin-right: 1.8125em;
 }
 
 .popular-feature_copy {
@@ -372,6 +357,7 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 4em 0;
 }
 
 /* ========= MAIN ARTICLE MEDIA QUERIES ========= */
@@ -390,12 +376,40 @@ footer {
     max-width: 45.625rem;
     height: 30.563rem;
   }
+
+  .popular-articles {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .nav-icon {
+    display: none;
+    width: 40px;
+  }
 }
 
 @media screen and (max-width: 700px) {
+  .wrapper {
+    padding: 1.75rem;
+  }
+  header {
+    margin-bottom: 2rem;
+  }
+
+  .dt-navigation {
+    display: none;
+  }
+
+  .logo img {
+    width: 44px;
+  }
+
   .main-feature {
     grid-template-columns: 100%;
-    grid-template-rows: 300px 120px 152px;
+    grid-template-rows: 300px auto 176px;
+    gap: 1.5rem;
+    margin-bottom: 4em;
   }
 
   .main-feature figure {
@@ -404,8 +418,8 @@ footer {
   }
 
   .main-feature_title {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
@@ -427,7 +441,6 @@ footer {
   }
 
   .popular-feature {
-    margin-bottom: 2em;
     margin-right: 0;
   }
 }
