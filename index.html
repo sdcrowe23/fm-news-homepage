@@ -55,80 +55,120 @@
         </nav>
       </header>
 
-      <section class="top-articles">
-        <!--  Main article  -->
-        <article class="main-article">
-          <img
-            src="/imgs/image-web-3-desktop.jpg"
-            width="100%"
-            ;
-            alt="Blog Image"
-            class="article-img"
-          />
-          <div class="article-copy">
-            <h1 class="article-title">The Bright Future of Web 3.0?</h1>
-            <div class="article-paragraph">
-              <p>
+      <main aria-label="main content">
+        <!--  main article  -->
+        <div class="main-articles">
+          <!-- main feature -->
+          <section class="main-feature">
+            <figure aria-label="blog image">
+              <img
+                src="/imgs/image-web-3-desktop.jpg"
+                width="100%"
+                ;
+                alt="blog image"
+                class="main-feature_img"
+              />
+            </figure>
+            <div class="main-feature_copy-wrapper">
+              <h1 class="main-feature_title">The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="main-feature_copy">
+              <p class="main-feature_para">
                 We dive into the next evolution of the web that claims to put
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
-              <a href="#">Read More</a>
+              <a href="#" class="main-feature_link">Read More</a>
+            </div>
+          </section>
+          <!-- end of Main feature -->
+          <!-- start of latest articles -->
+          <aside class="latest-articles">
+            <div class="latest-articles_wrapper">
+              <h2 class="latest-articles_title">New</h2>
+              <!-- featrue 1 -->
+              <section class="feature">
+                <h3 class="feature-title">
+                  <a class="feature-title_link" href="#"
+                    >Hydrogen VS Electric Cars</a
+                  >
+                </h3>
+                <p class="feature-para">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </section>
+              <!-- featrue 2 -->
+              <section class="feature">
+                <h3 class="feature_title">
+                  <a href="#" class="feature-title_link"
+                    >The Downsides of AI Artistry</a
+                  >
+                </h3>
+                <p class="feature-para">
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </section>
+              <!-- featrue 3 -->
+              <section class="feature">
+                <h3 class="feature_title">
+                  <a href="#" class="feature-title_link"
+                    >Is VC Funding Drying Up?</a
+                  >
+                </h3>
+                <p class="feature-para">
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </section>
+            </div>
+          </aside>
+        </div>
+        <!-- end of latest articles -->
+        <!-- end of main articles -->
+        <!-- start popular features -->
+        <aside class="popular-articles">
+          <div class="popular-feature">
+            <img
+              src="/imgs/image-retro-pcs.jpg"
+              class="popular-feature_img"
+              alt="Image"
+            />
+            <div class="popular-feature_copy">
+              <span>01</span>
+              <h3><a href="#">Reviving Retro PCs</a></h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
             </div>
           </div>
-        </article>
-        <!--  End Main article  -->
-        <!--  Newest Articles  -->
-        <aside class="new-articles">
-          <h2>New</h2>
-          <article class="feature">
-            <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          </article>
-          <article class="feature">
-            <h3><a href="#">The Downsides of AI Artistry</a></h3>
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </article>
-          <article class="feature">
-            <h3><a href="#">Is VC Funding Drying Up?</a></h3>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </article>
+          <div class="popular-feature">
+            <img
+              src="/imgs/image-top-laptops.jpg"
+              class="popular-feature_img"
+              alt="Image"
+            />
+            <div class="popular-feature_copy">
+              <span>02</span>
+              <h3><a href="#">Top 10 Laptops of 2022</a></h3>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="popular-feature">
+            <img
+              src="/imgs/image-gaming-growth.jpg"
+              class="popular-feature_img"
+              alt="Image"
+            />
+            <div class="popular-feature_copy">
+              <span>03</span>
+              <h3><a href="#">The Growth of Gaming</a></h3>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
         </aside>
-      </section>
-      <!--  End Latest Articles  -->
-      <aside class="popular-articles">
-        <div class="popular-feature">
-          <img src="/imgs/image-retro-pcs.jpg" alt="Image" />
-          <div class="popular-feature-copy">
-            <span>01</span>
-            <h3><a href="#">Reviving Retro PCs</a></h3>
-            <p>What happens when old PCs are given modern upgrades?</p>
-          </div>
-        </div>
-        <div class="popular-feature">
-          <img src="/imgs/image-top-laptops.jpg" alt="Image" />
-          <div class="popular-feature-copy">
-            <span>02</span>
-            <h3><a href="#">Top 10 Laptops of 2022</a></h3>
-            <p>Our best picks for various needs and budgets.</p>
-          </div>
-        </div>
-        <div class="popular-feature">
-          <img src="/imgs/image-gaming-growth.jpg" alt="Image" />
-          <div class="popular-feature-copy">
-            <span>03</span>
-            <h3><a href="#">The Growth of Gaming</a></h3>
-            <p>How the pandemic has sparked fresh opportunities.</p>
-          </div>
-        </div>
-      </aside>
-      <footer>Challenge by Frontend Mentor. Coded by Your Name Here.</footer>
+      
+      </main>
+      <footer ariarole="footer">
+        <p>Challenge by Frontend Mentor. Coded by Scottie Crowe.</p>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
