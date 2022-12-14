@@ -32,6 +32,7 @@
 
 body {
   background-color: var(--almost-white);
+  overflow-x: hidden;
 }
 
 /* Setting mobile base styles then scale up based on screen size */
@@ -121,18 +122,19 @@ header {
 
 .mb-nav {
   width: 0;
-  transition: 0.75s;
+  height: 100%;
 }
 
 .overlay {
   background-color: #000000;
   opacity: 0.55;
+  height: 100%;
   width: 0;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  transition: 0.75s;
+  transition: 0.5s;
 }
 
 .navigation-container {
@@ -145,11 +147,7 @@ header {
   right: 0;
   background-color: #fff;
   z-index: 10;
-  transition: 0.75s;
-}
-
-.navigation-container img {
-  align-self: flex-end;
+  transition: 1s;
 }
 
 .nav-icon {
@@ -158,10 +156,12 @@ header {
 }
 
 #nav-icon-close {
-  display: none;
   width: 1.875rem;
-  margin: 1.70625rem 1.25rem 0 0;
-  transition: 0.75s;
+  margin: 1.8rem 1.95rem 0 0;
+  transition: 1s;
+  position: relative;
+  left: 76%;
+  z-index: 20;
 }
 
 .mb-navigation {
