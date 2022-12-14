@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Solution](https://www.frontendmentor.io/solutions/news-homepage--xGiP59KoE)
+- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/news-homepage--xGiP59KoE)
 - Live Site URL: [Live site on Netlify](https://fm-news-homepage-blckbird.netlify.app/)
 
 ## My process
