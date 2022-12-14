@@ -103,7 +103,7 @@ header {
 
 .dt-link > a {
   margin-right: 40px;
-  color: var(--dark-spaceblue);
+  color: var(--gunmetal);
   font-weight: 400;
   font-size: 0.9375rem;
 }
